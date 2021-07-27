@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class>
+    <h1 style= "color:blue;">Welcome to the Project {{name}}</h1>
+    <h3 style= "color:blue;">Watch Me Now</h2>
+      <div class="conainer">
+       <img src="https://frankbanana.ngrok.io/video_feed" width="50%" alt="Camera offline!">
+       <br><br>
+       <a class='btn btn-primary' href="{{url_for('index')}}" role="button" style= "color:black;background-color:orange">Click Here To Go Back</a>
+   </div>
+  </div>
+{% endblock %}
